@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <style>
+      div {
+        margin: 1em;
+      }
+      svg {
+        fill: red;
+        border: 1px dashed black;
+      }
+      img {
+        fill: red;
+        border: 1px dashed black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      As SVG (no sizing):
+      <svg>
+        <use href="./arrow-down.svg#arrow-down"></use>
+      </svg>
+    </div>
+    <div>
+      As Image:
+      <img src="./arrow-down.svg" />
+    </div>
+    <div>
+      Proper scaling/styling requires setting viewBox:
+      <svg width="48" height="48" viewBox="0 0 24 24">
+        <use href="./arrow-down.svg#arrow-down"></use>
+      </svg>
+    </div>
+  </body>
+</html>
